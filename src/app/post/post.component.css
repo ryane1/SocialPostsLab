@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.singlePost {
+    font-family: 'Dosis', sans-serif;
+    border-bottom: 2px solid #f3f1f7;
+    padding: 0 30px;
+}
+
+span {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 55px;
+}
+
+.material-icon {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,20 @@
+<link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
+<body>
+    <section>
+        <h1>My Thoughts</h1>
+        <button class="btn" (click)="toggleDisplay()">New Thought</button>
+
+        <!-- *ngIf="visible" -->
+        <div class="content">
+            <post *ngFor="let post of socialPosts; index as i" [post]="post"></post>
+        </div>
+
+        <!-- <post (remove)='onRemovePost($event)' *ngFor="let post of socialPosts; index as i" [post]='post'> -->
+        <!-- </post> -->
+    </section>
+
+
+    <post-form *ngIf="!shouldBeShown" (submitted)="onSubmit($event);">
+    </post-form>
+</body>
